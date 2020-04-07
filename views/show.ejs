@@ -1,0 +1,25 @@
+<%- include("partials/header")%>
+<div class="ui main text container">
+	<div class="ui huge header">
+			Hello I Am <%= student.name%>
+	</div>
+	<ul>
+	<li>I am <%= student.age%> years old</li>
+	<li>I study in class <%=student.Std%>th</li>
+	<button>
+		<a href="/students/<%=student._id%>/edit">Update Details</a>
+	</button>
+	<form id="delete" action="/students/<%=student._id%>?_method=DELETE" method="POST">
+		<button>
+		   Delete
+	    </button>
+	</form>
+	
+	<button>
+		<a href="/students">Back</a>
+	</button>
+</ul>
+</div>
+
+
+<%- include("partials/footer")%>

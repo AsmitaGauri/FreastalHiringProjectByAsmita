@@ -1,0 +1,11 @@
+
+body{
+    font-size:3em;
+}
+li{
+	font-size:1.5em;
+}
+
+#delete{
+	display:inline;
+}

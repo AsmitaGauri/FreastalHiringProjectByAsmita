@@ -1,0 +1,13 @@
+<%- include("partials/header")%>
+<h1>
+	Add A New Student
+</h1>
+<form action="/students" method="POST">
+	<input type="text" name="student[name]" placeholder="student's name">
+	<input type="text" name="student[age]" placeholder="student's age">
+	<input type="text" name="student[Std]" placeholder="student's Standard">
+    <button>
+		Submit
+	</button>
+</form>
+<%- include("partials/footer")%>

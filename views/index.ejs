@@ -1,0 +1,33 @@
+<%- include("partials/header")%>
+<div class="ui main text container">
+	<div class="ui huge header">
+		
+	Following Are The Students In The Database
+
+	</div>
+	<div class="ui top attached segment">
+		<div class="ui divided items">
+		       <% students.forEach(function(student){ %>
+			
+					   <li><%= student.name%>
+                       <button>
+	                           <a href="/students/<%= student._id%>">Know More</a> 
+                       </button>
+                        </li>
+   
+                 <%})%>
+               
+				
+				 <button>
+	                  <a href="/students/new">Add A New Student</a> 
+                </button>
+			
+	    </div>
+	</div>
+	
+	
+ 
+</div>
+
+
+<%- include("partials/footer")%>

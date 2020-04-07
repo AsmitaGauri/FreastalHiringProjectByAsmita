@@ -1,0 +1,13 @@
+<%- include("partials/header")%>
+<h1>
+	Update The Details of <%= student.name%>
+</h1>
+<form action="/students/<%= student._id%>?_method=PUT" method="POST">
+	Name<input type="text" name="student[name]" value="<%=student.name%>">
+	Age<input type="text" name="student[age]" value="<%=student.age%>">
+	Std<input type="text" name="student[Std]" value="<%=student.Std%>">
+    <button>
+		Submit
+	</button>
+</form>
+<%- include("partials/footer")%>
